@@ -137,7 +137,8 @@
     </div>
     
     <script>
-        window.addEventListener('calltrkSbisScriptLoaded'. () => {
+        window.addEventListener('calltrkSbisScriptLoaded', (event) => {
+            console.log({event, ct: window.calltrkSbis);
             alert("номер по событию хех", window.calltrkSbis.getPhone());
         })
     </script>
